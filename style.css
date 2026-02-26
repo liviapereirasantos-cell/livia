@@ -1,0 +1,30 @@
+/* Estilos generales para centrar todo en la pantalla */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo de la "tarjeta" del mensaje */
+.contenedor {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Color y tamaño del título */
+h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Estilo del texto secundario */
+p {
+    color: #555;
+}
