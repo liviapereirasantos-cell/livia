@@ -5,14 +5,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #34f9e2;
     font-family: Arial, sans-serif;
 }
 
 /* Estilo de la "tarjeta" del mensaje */
 .contenedor {
     text-align: center;
-    padding: 2rem;
+    p    background-color: #34f9e2;
+adding: 2rem;
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
