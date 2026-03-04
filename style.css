@@ -5,3 +5,38 @@ body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente */
+    height: 100vh;           /* Usa toda a altura da tela */
+    background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilização do container principal */
+.contenedor {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de leve flutuação ao passar o mouse */
+.contenedor:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilo do título */
+h1 {
+    color: #333;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Estilo do parágrafo */
+p {
+    color: #666;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
