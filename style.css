@@ -1,30 +1,46 @@
-/* Estilos generales para centrar todo en la pantalla */
+/* Configurações básicas para centralizar tudo na tela */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ocupa 100% da altura da tela */
     margin: 0;
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3); /* Fundo degradê */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Estilo de la "tarjeta" del mensaje */
-.contenedor {
+/* Estilização do quadro branco (card) */
+.cartao {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     text-align: center;
-    p    background-color: #34f9e2;
-adding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
 }
 
-/* Color y tamaño del título */
 h1 {
-    color: #f6a2cc;
+    color: #333;
     margin-bottom: 10px;
 }
 
-/* Estilo del texto secundario */
 p {
-    color: #555;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilo do botão */
+.botao {
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6e8efb;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #a777e3;
 }
