@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Hola Mundo</title>
+    <title>Meu Primeiro Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="contenedor">
         <h1>¡Hola Mundo!</h1>
-        <p>Este es mi primer diseño con HTML y CSS.</p>
+        <p>Este é o meu primeiro design com HTML e CSS.</p>
+        
+        <button class="botao-interativo" onclick="mostrarAlerta()">Clique aqui!</button>
     </div>
+
+    <script>
+        function mostrarAlerta() {
+            alert("Parabéns! Você acabou de interagir com seu primeiro site.");
+        }
+    </script>
 
 </body>
 </html>
