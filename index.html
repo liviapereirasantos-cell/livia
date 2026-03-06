@@ -1,25 +1,46 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Configuração geral para ocupar a tela toda */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Fundo Rosa Realista (Gradiente) */
+    background: radial-gradient(circle, #ffdee9 0%, #b5fffc 100%); /* Um mix suave */
+    /* Ou use este para um rosa mais puro: */
+    background: linear-gradient(135deg, #fff5f7 0%, #fbc2eb 100%);
+}
 
-    <div class="contenedor">
-        <h1>¡Hola Mundo!</h1>
-        <p>Este é o meu primeiro design com HTML e CSS.</p>
-        
-        <button class="botao-interativo" onclick="mostrarAlerta()">Clique aqui!</button>
-    </div>
+/* Estilização do cartão centralizado */
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.8); /* Branco levemente transparente */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
-    <script>
-        function mostrarAlerta() {
-            alert("Parabéns! Você acabou de interagir com seu primeiro site.");
-        }
-    </script>
+h1 {
+    color: #d63384;
+}
 
-</body>
-</html>
+.botao-interativo {
+    background-color: #ff85a1;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.botao-interativo:hover {
+    background-color: #f75f8a;
+    transform: scale(1.05);
+}
