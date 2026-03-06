@@ -1,4 +1,6 @@
-/* Remove margens padrão e centraliza o conteúdo na tela toda */
+/* Importa uma fonte que lembra a da Barbie */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -6,50 +8,76 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f7f6; /* Um cinza bem clarinho */
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Fonte padrão mais limpa */
+    
+    /* Fundo Gradiente Rosa da Barbie */
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #e91e63 100%);
+    background-size: cover;
+    color: #4a4a4a;
+    overflow: hidden; /* Evita barras de rolagem desnecessárias */
 }
 
-/* Estilização do cartão (a div .contenedor) */
+/* Estilização do cartão centralizado (Contêiner Barbie) */
 .contenedor {
+    background-color: rgba(255, 255, 255, 0.9); /* Branco com transparência */
+    padding: 50px;
+    border-radius: 25px; /* Bordas mais arredondadas */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
     text-align: center;
-    background-color: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    border-top: 8px solid #007bff; /* Barra azul no topo */
+    backdrop-filter: blur(8px); /* Efeito de vidro fosco mais intenso */
+    border: 3px solid #e91e63; /* Borda rosa vibrante */
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    z-index: 1; /* Garante que esteja acima de outros elementos */
 }
 
+/* Título Barbie */
 h1 {
-    color: #333;
-    margin-bottom: 10px;
+    font-family: 'Lobster', cursive; /* Fonte do tipo Barbie */
+    color: #e91e63; /* Rosa vibrante */
+    font-size: 3.5em; /* Tamanho maior */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Sombra de texto */
 }
 
 p {
-    color: #666;
-    font-size: 1.1rem;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #6a0572; /* Roxo suave para o texto */
 }
-.botao-interativo {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
+
+/* Estilo para todos os botões no contêiner */
+.contenedor button {
+    display: block; /* Cada botão em sua própria linha */
+    width: 80%; /* Ocupa mais espaço */
+    margin: 15px auto; /* Centraliza e adiciona espaço */
+    padding: 15px 25px;
+    font-size: 1.3em;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Cria uma transição suave */
-    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-/* O "mágica" acontece aqui quando o mouse passa por cima */
+/* Estilo do botão "Explore Agora!" */
+.botao-interativo {
+    background-color: #e91e63; /* Rosa forte */
+    color: white;
+    border: 2px solid #e91e63;
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.4);
+}
+
 .botao-interativo:hover {
-    background-color: #0056b3; /* Cor mais escura ao tocar */
-    transform: scale(1.05);    /* Aumenta levemente de tamanho */
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+    background-color: #d81b60; /* Rosa um pouco mais escuro */
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.6);
 }
 
-/* Efeito quando o botão é clicado */
-.botao-interativo:active {
-    transform: scale(0.95);
-}
+/* Estilo do botão "Olá Mundo! Clique aqui" */
+.botao-ola-mundo {
+    background-color: #f8bbd0; /* Rosa claro */
+    color: #e91e63; /* Texto rosa forte */
+    border: 2px solid #e91e
