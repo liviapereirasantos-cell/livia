@@ -4,22 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo da Barbie</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; padding: 0; display: flex; justify-content: center;
+            align-items: center; height: 100vh; font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(255, 105, 180, 0.6), rgba(255, 20, 147, 0.6)), 
+                        url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=2070&auto=format&fit=crop'); 
+            background-size: cover; background-position: center;
+        }
+
+        .contenedor {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            padding: 50px; border-radius: 30px; text-align: center;
+            box-shadow: 0 10px 40px rgba(255, 20, 147, 0.3);
+        }
+
+        .logo-barbie {
+            font-family: 'Lobster', cursive; color: #fff;
+            font-size: 3.5rem; text-shadow: 3px 3px 0px #e91e63;
+        }
+
+        .botao-explore {
+            background: #ff1493; color: white; border: none;
+            padding: 15px 40px; font-size: 1.2rem; font-weight: bold;
+            border-radius: 50px; cursor: pointer; position: relative;
+            overflow: hidden; transition: all 0.3s;
+            animation: pulsar 2s infinite; text-transform: uppercase;
+        }
+
+        /* Efeito Glitter ao passar o mouse */
+        .botao-explore:after {
+            content: ""; position: absolute; top: -50%; left: -60%;
+            width: 20%; height: 200%; background: rgba(255, 255, 255, 0.8);
+            transform: rotate(30deg); transition: all 0.5s; opacity: 0;
+        }
+
+        .botao-explore:hover:after { left: 120%; opacity: 1; }
+
+        .botao-explore:hover {
+            background: #fff; color: #ff1493; transform: scale(1.1);
+        }
+
+        @keyframes pulsar {
+            0% { box-shadow: 0 0 0 0 rgba(255, 20, 147, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 20, 147, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 20, 147, 0); }
+        }
+    </style>
 </head>
 <body>
 
     <div class="contenedor">
         <div class="logo-barbie">Barbie</div>
-        <h1>Bem-vinda ao Meu Mundo!</h1>
-        <p>Tudo é possível quando você brilha.</p>
-        
+        <p style="color: white;">Clique abaixo para entrar no site oficial!</p>
         <button class="botao-explore" onclick="mostrarAlerta()">Explore Agora!</button>
     </div>
 
     <script>
         function mostrarAlerta() {
-            alert("💖 Você entrou no mundo mágico! Vamos brilhar! 💖");
+            window.location.href = "https://shop.mattel.com/pt-br/pages/barbie";
         }
     </script>
 
